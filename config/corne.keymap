@@ -62,9 +62,9 @@
 
         ru_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y      &kp U   &new_i         &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F      &kp G        &kp H      &kp J   &kp K          &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N      &new_m  &kp LESS_THAN  &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp ESC
+&kp TAB         &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y      &kp U   &new_i     &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D     &kp F      &kp G        &kp H      &kp J   &kp K      &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N      &new_m  &kp COMMA  &kp DOT           &kp SINGLE_QUOTE  &kp ESC
                               &kp LCMD  &en_macro  &kp SPACE    &kp ENTER  &mo 3   &trans
             >;
         };
