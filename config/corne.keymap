@@ -13,7 +13,7 @@
         ru_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &kp GLOBE>, <&macro_press>;
+            bindings = <&to 1 &kp LA(SPACE)>, <&macro_press>;
 
             label = "NEW_MACRO";
         };
@@ -21,7 +21,7 @@
         en_macro: en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp GLOBE>;
+            bindings = <&to 0 &kp LA(SPACE)>;
             label = "EN";
         };
     };
@@ -62,7 +62,7 @@
 
         ru_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y      &kp U   &new_i         &kp O             &kp P             &kp BACKSPACE
+&kp TAB         &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y      &kp U   &new_i         &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
 &kp LCTRL       &kp A  &kp S  &kp D     &kp F      &kp G        &kp H      &kp J   &kp K          &kp L             &kp SEMICOLON     &kp LEFT_ALT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N      &new_m  &kp LESS_THAN  &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp ESC
                               &kp LCMD  &en_macro  &kp SPACE    &kp ENTER  &mo 3   &trans
