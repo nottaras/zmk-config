@@ -13,14 +13,15 @@
         ru_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &kp GLOBE>;
+            bindings = <&to 1 &kp GLOBE>, <&macro_press>;
+
             label = "NEW_MACRO";
         };
 
         en_macro: en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 0 &kp GLOBE>;
+            bindings = <&to 0 &kp GLOBE>;
             label = "EN";
         };
     };
