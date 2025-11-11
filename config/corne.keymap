@@ -44,7 +44,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        en_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -52,9 +52,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y    &kp U  &kp I   &kp O   &kp P   &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H    &kp J  &kp K   &kp L   &trans  &kp LEFT_ALT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N    &kp M  &trans  &trans  &trans  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P             &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI          &kp LEFT_ALT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp ESC
                          &kp LGUI  &lang_toggle  &kp SPACE    &kp RET  &mo 3  &trans
             >;
         };
