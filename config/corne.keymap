@@ -39,6 +39,15 @@
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp BACKSLASH>;
         };
+
+        new_esc: new_esc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_ESC";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
     };
 
     keymap {
@@ -54,7 +63,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P             &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI          &kp LEFT_ALT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp ESC
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &new_esc 4 ESCAPE
                          &kp LGUI  &lang_toggle  &kp SPACE    &kp RET  &mo 3  &trans
             >;
         };
@@ -63,7 +72,7 @@
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E     &kp R         &new_t       &kp Y      &kp U   &new_i     &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
 &kp LCTRL       &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J   &kp K      &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &new_m  &kp COMMA  &kp DOT           &kp SINGLE_QUOTE  &kp ESC
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &new_m  &kp COMMA  &kp DOT           &kp SINGLE_QUOTE  &new_esc 4 ESC
                               &kp LCMD  &lang_toggle  &kp SPACE    &kp ENTER  &mo 3   &trans
             >;
         };
