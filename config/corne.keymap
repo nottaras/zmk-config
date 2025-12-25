@@ -13,7 +13,7 @@
         lang_toggle: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &tog 1>;
+            bindings = <&tog 1 &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
             label = "NEW_MACRO";
         };
     };
