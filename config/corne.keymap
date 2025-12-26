@@ -16,6 +16,13 @@
             bindings = <&kp CAPSLOCK &tog 1>;
             label = "NEW_MACRO";
         };
+
+        test_globe: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GLOBE>;
+            label = "TEST";
+        };
     };
 
     behaviors {
@@ -72,10 +79,10 @@
 
         en_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y    &kp U       &kp I       &kp O    &kp P             &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H    &kp J       &kp K       &kp L    &kp SEMI          &kp LEFT_ALT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N    &kp M       &kp COMMA   &kp DOT  &kp SINGLE_QUOTE  &new_esc 4 ESC
-                         &kp LGUI  &lang_toggle  &kp SPACE    &kp RET  &new_3 3 3  &new_3 2 2
+&kp TAB    &kp Q  &kp W  &kp E      &kp R         &kp T          &kp Y    &kp U       &kp I       &kp O    &kp P             &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D      &kp F         &kp G          &kp H    &kp J       &kp K       &kp L    &kp SEMI          &kp LEFT_ALT
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V         &kp B          &kp N    &kp M       &kp COMMA   &kp DOT  &kp SINGLE_QUOTE  &new_esc 4 ESC
+                         &kp GLOBE  &lang_toggle  &test_globe    &kp RET  &new_3 3 3  &new_3 2 2
             >;
         };
 
