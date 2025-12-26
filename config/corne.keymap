@@ -13,7 +13,7 @@
         lang_toggle: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog 1>;
+            bindings = <&kp GLOBE &tog 1>;
             label = "NEW_MACRO";
         };
 
