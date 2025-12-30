@@ -118,10 +118,10 @@
 
         sym_layer {
             bindings = <
-&kp TAB    &kp EXCL    &kp AT          &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none    &none  &none  &none  &none  &kp BSPC
-&kp LCTRL  &kp PLUS    &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &none    &none  &none  &none  &none  &kp LEFT_ALT
-&kp LSHFT  &kp DOLLAR  &kp UNDERSCORE  &kp SLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE          &none    &none  &none  &none  &none  &none
-                                       &kp LGUI   &none                 &kp SPACE                &kp RET  &to 3  &to 0
+&kp TAB    &kp EXCL    &kp AT          &kp HASH   &none    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none  &none  &none  &none  &kp BSPC
+&kp LCTRL  &kp PLUS    &kp MINUS       &kp EQUAL  &none    &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none  &none  &none  &none  &kp LEFT_ALT
+&kp LSHFT  &kp DOLLAR  &kp UNDERSCORE  &kp SLASH  &none    &kp LEFT_BRACE          &kp RIGHT_BRACE        &none  &none  &none  &none  &none
+                                       &kp COMMA  &kp DOT  &kp BACKSPACE           &kp RET                &to 3  &to 0
             >;
         };
 
