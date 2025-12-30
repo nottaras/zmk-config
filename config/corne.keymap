@@ -65,6 +65,34 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
+
+        new_comma: new_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_COMMA";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LS(COMMA)>;
+        };
+
+        new_dot: new_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_DOT";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp LS(DOT)>;
+        };
+
+        new_semicolon: new_semicolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_SEMICOLON";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp LS(SEMICOLON)>;
+        };
+
+        new_single_quote: new_single_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_SINGLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp LS(SINGLE_QUOTE)>;
+        };
     };
 
     keymap {
@@ -72,9 +100,9 @@
 
         en_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R         &kp T        &kp Y    &kp U       &kp I       &kp O    &kp P             &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D             &kp F         &kp G        &kp H    &kp J       &kp K       &kp L    &kp SEMI          &kp LEFT_ALT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &kp N    &kp M       &kp COMMA   &kp DOT  &kp SINGLE_QUOTE  &new_esc 4 ESC
+&kp TAB    &kp Q  &kp W  &kp E             &kp R         &kp T        &kp Y    &kp U       &kp I       &kp O     &kp P              &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D             &kp F         &kp G        &kp H    &kp J       &kp K       &kp L     &new_semicolon     &kp LEFT_ALT
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &kp N    &kp M       &new_comma  &new_dot  &new_single_quote  &new_esc 4 ESC
                          &kp LEFT_COMMAND  &lang_toggle  &kp SPACE    &kp RET  &new_3 3 3  &new_3 2 2
             >;
         };
