@@ -94,9 +94,9 @@
             bindings = <&kp SINGLE_QUOTE>, <&kp LS(SINGLE_QUOTE)>;
         };
 
-        new_behavior: new_behavior {
+        new_comma_and_dot: new_comma_and_dot {
             compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
+            label = "NEW_COMMA_AND_DOT";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_6)>, <&kp LS(NUMBER_7)>;
         };
@@ -116,10 +116,10 @@
 
         ru_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E             &kp R         &new_t       &kp Y      &kp U   &new_i      &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G        &kp H      &kp J   &kp K       &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &kp N      &new_m  &kp COMMA   &kp DOT           &kp SINGLE_QUOTE  &new_esc 4 ESC
-                              &kp LEFT_COMMAND  &lang_toggle  &kp SPACE    &kp ENTER  &none   &new_3 3 3
+&kp TAB         &kp Q  &kp W  &kp E             &kp R         &new_t       &kp Y      &kp U               &new_i      &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G        &kp H      &kp J               &kp K       &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &kp N      &new_m              &kp COMMA   &kp DOT           &kp SINGLE_QUOTE  &new_esc 4 ESC
+                              &kp LEFT_COMMAND  &lang_toggle  &kp SPACE    &kp ENTER  &new_comma_and_dot  &new_3 3 3
             >;
         };
 
