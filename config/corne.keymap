@@ -126,8 +126,8 @@
         sym_layer {
             bindings = <
 &kp GRAVE  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
-&kp SLASH  &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &none
-&none      &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &kp MINUS               &none                  &none              &none            &none             &none      &none
+&kp SLASH  &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
+&none      &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &kp MINUS               &none                  &none              &none            &none             &none      &kp ESCAPE
                                            &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &to 3
             >;
         };
@@ -135,8 +135,8 @@
         nav_num_layer {
             bindings = <
 &kp TAB           &kp KP_PLUS   &kp N7        &kp N8    &kp N9  &kp BACKSPACE      &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none  &kp BSPC
-&kp LEFT_CONTROL  &kp KP_EQUAL  &kp N4        &kp N5    &kp N6  &kp KP_MULTIPLY    &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &none
-&kp LSHFT         &kp KP_MINUS  &kp NUMBER_1  &kp N2    &kp N3  &kp KP_DIVIDE      &none      &none     &none         &none      &none  &none
+&kp LEFT_CONTROL  &kp KP_EQUAL  &kp N4        &kp N5    &kp N6  &kp KP_MULTIPLY    &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &kp LEFT_ALT
+&kp LSHFT         &kp KP_MINUS  &kp NUMBER_1  &kp N2    &kp N3  &kp KP_DIVIDE      &none      &none     &none         &none      &none  &kp ESCAPE
                                               &kp LGUI  &kp N0  &new_dot_comma     &kp ENTER  &none     &to 0
             >;
         };
