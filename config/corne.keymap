@@ -16,13 +16,6 @@
             bindings = <&kp CAPSLOCK &tog 1>;
             label = "NEW_MACRO";
         };
-
-        sym_toggle: sym_toggle {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog 1>;
-            label = "SYM_TOGGLE";
-        };
     };
 
     behaviors {
@@ -99,6 +92,13 @@
             label = "NEW_SINGLE_QUOTE";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp LS(SINGLE_QUOTE)>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_6)>, <&kp LS(NUMBER_7)>;
         };
     };
 
