@@ -100,6 +100,14 @@
             #binding-cells = <0>;
             bindings = <&kp KP_DOT>, <&kp LS(KP_DOT)>;
         };
+
+        new_btclear: new_btclear {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BTCLEAR";
+            bindings = <&bt>;
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
     };
 
     keymap {
@@ -143,10 +151,10 @@
 
         bt_layer {
             bindings = <
-&none  &none          &none          &none          &none          &none            &none       &none       &none       &none  &none  &none
-&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &none  &none  &none
-&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none       &none       &none       &none  &none  &none
-                                     &none          &none          &none            &none       &none       &none
+&none  &none         &none         &none         &none  &none                  &none  &none  &none       &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none                  &none  &none  &bt BT_CLR  &none  &none  &none
+&none  &none         &none         &none         &none  &none                  &none  &none  &none       &none  &none  &none
+                                   &none         &none  &new_btclear BT_CLR    &none  &none  &none
             >;
         };
     };
