@@ -104,7 +104,8 @@
         new_btclear: new_btclear {
             compatible = "zmk,behavior-hold-tap";
             label = "NEW_BTCLEAR";
-            bindings = <&bt>;
+            bindings = <&bt>, <&none>;
+
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
