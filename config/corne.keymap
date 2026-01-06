@@ -150,16 +150,16 @@
 
         sym_layer {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
-&kp SLASH  &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
-&none      &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &new_minus              &none                  &none              &none            &none             &none      &kp ESCAPE
-                                           &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &to 3
+&new_tab 4 GRAVE  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
+&kp SLASH         &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
+&none             &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &new_minus              &none                  &none              &none            &none             &none      &kp ESCAPE
+                                                  &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &to 3
             >;
         };
 
         nav_num_layer {
             bindings = <
-&kp TAB           &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp BACKSPACE      &kp LA(UP_ARROW)    &kp LG(LEFT)          &kp UP_ARROW  &kp LG(RIGHT)  &kp PAGE_UP        &kp BSPC
+&new_tab 4 TAB    &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp BACKSPACE      &kp LA(UP_ARROW)    &kp LG(LEFT)          &kp UP_ARROW  &kp LG(RIGHT)  &kp PAGE_UP        &kp BSPC
 &kp LEFT_SHIFT    &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_MULTIPLY    &kp LA(DOWN_ARROW)  &kp LEFT              &kp DOWN      &kp RIGHT      &kp PAGE_DOWN      &kp LEFT_ALT
 &kp LEFT_CONTROL  &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp KP_DIVIDE      &kp LS(LA(LEFT))    &kp LA(LEFT)          &none         &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
                                                  &kp KP_NUMBER_0  &kp LEFT_COMMAND  &new_dot_comma     &kp ENTER           &kp LS(LEFT_COMMAND)  &to 0
