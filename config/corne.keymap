@@ -148,10 +148,10 @@
 
         ru_layer {
             bindings = <
-&new_tab 4 TAB    &kp Q  &kp W  &kp E          &kp R             &new_t       &kp Y      &kp U               &new_i      &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J               &kp K       &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &new_m              &kp COMMA   &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
-                                &lang_layer_0  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &new_comma_and_dot  &new_3 3 3
+&new_tab 4 TAB    &kp Q  &kp W  &kp E          &kp R             &new_t       &kp Y      &kp U      &new_i     &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J      &kp K      &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &new_m     &kp COMMA  &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
+                                &lang_layer_0  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &kp COMMA  &kp DOT
             >;
         };
 
@@ -160,7 +160,7 @@
 &new_tab 4 GRAVE  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
 &kp SLASH         &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
 &none             &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &new_minus              &none                  &none              &none            &none             &none      &kp ESCAPE
-                                                  &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &to 3
+                                                  &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &none
             >;
         };
 
@@ -169,7 +169,7 @@
 &new_tab 4 TAB    &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp BACKSPACE     &kp LA(UP_ARROW)    &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &kp PAGE_UP        &kp BSPC
 &kp LEFT_SHIFT    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp ASTERISK      &kp LA(DOWN_ARROW)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp PAGE_DOWN      &kp LEFT_ALT
 &kp LEFT_CONTROL  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp SLASH         &kp LS(LA(LEFT))    &kp LA(LEFT)  &none         &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
-                                           &kp NUMBER_0  &kp LEFT_COMMAND  &new_dot_comma    &kp ENTER           &to 2         &to 0
+                                           &kp NUMBER_0  &kp LEFT_COMMAND  &new_dot_comma    &kp ENTER           &none         &to 0
             >;
         };
 
