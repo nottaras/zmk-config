@@ -20,7 +20,7 @@
         lang_layer_0: land_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &to 1>;
+            bindings = <&kp CAPSLOCK &to 0>;
             label = "LAND_LAYER_0";
         };
     };
