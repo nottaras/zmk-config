@@ -10,11 +10,18 @@
 
 / {
     macros {
-        lang_toggle: new_macro {
+        lang_layer_1: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog 1>;
+            bindings = <&kp CAPSLOCK &to 1>;
             label = "NEW_MACRO";
+        };
+
+        lang_layer_0: land_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK &to 1>;
+            label = "LAND_LAYER_0";
         };
     };
 
@@ -132,19 +139,19 @@
 
         en_layer {
             bindings = <
-&new_tab 4 TAB    &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U       &kp I       &kp O     &kp P              &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J       &kp K       &kp L     &new_semicolon     &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &kp M       &new_comma  &new_dot  &new_single_quote  &kp ESCAPE
-                                &lang_toggle  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &new_3 2 2  &new_3 3 3
+&new_tab 4 TAB    &kp Q  &kp W  &kp E          &kp R             &kp T        &kp Y      &kp U       &kp I       &kp O     &kp P              &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J       &kp K       &kp L     &new_semicolon     &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &kp M       &new_comma  &new_dot  &new_single_quote  &kp ESCAPE
+                                &lang_layer_1  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &new_3 2 2  &new_3 3 3
             >;
         };
 
         ru_layer {
             bindings = <
-&new_tab 4 TAB    &kp Q  &kp W  &kp E         &kp R             &new_t       &kp Y      &kp U               &new_i      &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J               &kp K       &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &new_m              &kp COMMA   &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
-                                &lang_toggle  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &new_comma_and_dot  &new_3 3 3
+&new_tab 4 TAB    &kp Q  &kp W  &kp E          &kp R             &new_t       &kp Y      &kp U               &new_i      &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J               &kp K       &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &new_m              &kp COMMA   &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
+                                &lang_layer_0  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &new_comma_and_dot  &new_3 3 3
             >;
         };
 
