@@ -159,10 +159,10 @@
 
         nav_num_layer {
             bindings = <
-&new_tab 4 TAB    &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp BACKSPACE      &kp LA(UP_ARROW)    &kp LG(LEFT)          &kp UP_ARROW  &kp LG(RIGHT)  &kp PAGE_UP        &kp BSPC
-&kp LEFT_SHIFT    &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_MULTIPLY    &kp LA(DOWN_ARROW)  &kp LEFT              &kp DOWN      &kp RIGHT      &kp PAGE_DOWN      &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp KP_DIVIDE      &kp LS(LA(LEFT))    &kp LA(LEFT)          &none         &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
-                                                 &kp KP_NUMBER_0  &kp LEFT_COMMAND  &new_dot_comma     &kp ENTER           &kp LS(LEFT_COMMAND)  &to 0
+&new_tab 4 TAB    &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp BACKSPACE     &kp LA(UP_ARROW)    &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &kp PAGE_UP        &kp BSPC
+&kp LEFT_SHIFT    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp ASTERISK      &kp LA(DOWN_ARROW)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp PAGE_DOWN      &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp SLASH         &kp LS(LA(LEFT))    &kp LA(LEFT)  &none         &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
+                                           &kp NUMBER_0  &kp LEFT_COMMAND  &new_dot_comma    &kp ENTER           &to 2         &to 0
             >;
         };
 
