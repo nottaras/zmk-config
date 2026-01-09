@@ -164,10 +164,10 @@
 
         bt_layer {
             bindings = <
-&none  &none         &none         &none         &none  &none         &none           &none           &none                                 &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none         &none           &none           &none                                 &none  &none  &none
-&none  &kp GLOBE     &kp LANG1     &kp LANG2     &none  &bt BT_CLR    &kp LANGUAGE_1  &kp LANGUAGE_2  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &none  &none  &none
-                                   &none         &none  &none         &none           &none           &none
+&none  &none         &none         &none         &none  &none         &none  &none  &none  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none         &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none  &none         &none  &none  &none  &none  &none  &none
+                                   &none         &none  &bt BT_CLR    &none  &none  &none
             >;
         };
     };
