@@ -132,6 +132,20 @@
             #binding-cells = <0>;
             bindings = <&kp KP_MINUS>, <&kp LA(MINUS)>;
         };
+
+        ru_jo: ru_jo {
+            compatible = "zmk,behavior-macro";
+            label = "RU_JO";
+             bindings = <
+                &kp LALT
+                &kp U
+                &kp N
+                &kp 0
+                &kp 4
+                &kp 1
+                &kp 9
+                    >;
+        };
     };
 
     keymap {
@@ -148,7 +162,7 @@
 
         ru_layer {
             bindings = <
-&new_tab 4 TAB    &uc 0x0439  &kp W  &kp E          &kp R             &new_t       &kp Y      &kp U       &new_i          &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&new_tab 4 TAB    &ru_jo  &kp W  &kp E          &kp R             &new_t       &kp Y      &kp U       &new_i          &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J       &kp K           &kp L             &kp SEMICOLON     &kp LEFT_ALT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &new_m      &kp COMMA       &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
                                 &lang_layer_0  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &kp KP_DOT  &kp LS(KP_DOT)
