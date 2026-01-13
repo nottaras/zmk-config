@@ -125,7 +125,7 @@
         new_comma_minus: new_comma_minus {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp KP_COMMA>, <&kp MINUS>;
+            bindings = <&kp KP_DOT>, <&kp MINUS>;
 
             label = "NEW_COMMA_MINUS";
         };
