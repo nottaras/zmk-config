@@ -28,25 +28,25 @@
     };
 
     behaviors {
-        new_m: new_m {
+        td_m_bracket: td_m_bracket {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
         };
 
-        new_i: new_i {
+        td_i_o: td_i_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
         };
 
-        new_t: new_t {
+        td_t_backslash: td_t_backslash {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp BACKSLASH>;
         };
 
-        new_tab: new_tab {
+        ht_tab_layer: ht_tab_layer {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
 
@@ -55,13 +55,13 @@
             flavor = "tap-preferred";
         };
 
-        new_dot_comma: new_dot_comma {
+        td_dot_comma: td_dot_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COMMA>;
         };
 
-        new_3: new_3 {
+        ht_layer_mo_tog: ht_layer_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&tog>;
 
@@ -69,37 +69,37 @@
             tapping-term-ms = <250>;
         };
 
-        new_comma: new_comma {
+        td_comma_shifted: td_comma_shifted {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LS(COMMA)>;
         };
 
-        new_dot: new_dot {
+        td_dot_shifted: td_dot_shifted {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp LS(DOT)>;
         };
 
-        new_semicolon: new_semicolon {
+        td_semicolon_shifted: td_semicolon_shifted {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp SEMI>, <&kp LS(SEMICOLON)>;
         };
 
-        new_single_quote: new_single_quote {
+        td_quote_shifted: td_quote_shifted {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp LS(SINGLE_QUOTE)>;
         };
 
-        new_comma_and_dot: new_comma_and_dot {
+        td_keypad_dot_shifted: td_keypad_dot_shifted {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp KP_DOT>, <&kp LS(KP_DOT)>;
         };
 
-        new_btclear: new_btclear {
+        ht_bt_clear: ht_bt_clear {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&bt>, <&none>;
 
@@ -107,27 +107,27 @@
             tapping-term-ms = <250>;
         };
 
-        new_command: new_command {
+        ht_command: ht_command {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_COMMAND";
+            label = "HT_COMMAND";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
 
-        new_minus: new_minus {
+        td_minus_alt: td_minus_alt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp KP_MINUS>, <&kp LA(MINUS)>;
         };
 
-        new_comma_minus: new_comma_minus {
+        td_dot_minus: td_dot_minus {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp KP_DOT>, <&kp MINUS>;
 
-            label = "NEW_COMMA_MINUS";
+            label = "TD_DOT_MINUS";
         };
     };
 
@@ -136,37 +136,37 @@
 
         en_layer {
             bindings = <
-&new_tab 4 TAB    &kp Q  &kp W  &kp E          &kp R             &kp T        &kp Y      &kp U       &kp I       &kp O     &kp P              &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J       &kp K       &kp L     &new_semicolon     &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &kp M       &new_comma  &new_dot  &new_single_quote  &kp ESCAPE
-                                &switch_to_ru  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &new_3 2 2  &new_3 3 3
+&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &kp T        &kp Y      &kp U                 &kp I                 &kp O            &kp P                  &kp BSPC
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J                 &kp K                 &kp L            &td_semicolon_shifted  &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &kp M                 &td_comma_shifted     &td_dot_shifted  &td_quote_shifted      &kp ESCAPE
+                                   &switch_to_ru  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &ht_layer_mo_tog 2 2  &ht_layer_mo_tog 3 3
             >;
         };
 
         ru_layer {
             bindings = <
-&new_tab 4 TAB    &kp Q  &kp W  &kp E          &kp R             &new_t       &kp Y      &kp U             &new_i          &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J             &kp K           &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &new_m            &kp COMMA       &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
-                                &switch_to_en  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &new_comma_minus  &kp LS(KP_DOT)
+&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &td_t_backslash    &kp Y      &kp U          &td_i_o         &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G              &kp H      &kp J          &kp K           &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B              &kp N      &td_m_bracket  &kp COMMA       &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
+                                   &switch_to_en  &kp LEFT_COMMAND  &kp SPACE          &kp ENTER  &td_dot_minus  &kp LS(KP_DOT)
             >;
         };
 
         sym_layer {
             bindings = <
-&new_tab 4 GRAVE  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
-&kp SLASH         &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
-&none             &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &new_minus              &none                  &none              &none            &none             &none      &kp ESCAPE
-                                                  &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &none
+&ht_tab_layer 4 GRAVE  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
+&kp SLASH              &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
+&none                  &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &td_minus_alt           &none                  &none              &none            &none             &none      &kp ESCAPE
+                                                       &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &none
             >;
         };
 
         nav_num_layer {
             bindings = <
-&new_tab 4 TAB    &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp BACKSPACE     &kp LA(UP_ARROW)    &kp LG(LEFT)  &kp UP_ARROW          &kp LG(RIGHT)  &kp PAGE_UP        &kp BSPC
-&kp LEFT_SHIFT    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp ASTERISK      &kp LA(DOWN_ARROW)  &kp LEFT      &kp DOWN              &kp RIGHT      &kp PAGE_DOWN      &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp SLASH         &kp LS(LA(LEFT))    &kp LA(LEFT)  &kp LS(LG(NUMBER_4))  &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
-                                           &kp NUMBER_0  &kp LEFT_COMMAND  &new_dot_comma    &kp ENTER           &none         &to 0
+&ht_tab_layer 4 TAB  &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp BACKSPACE    &kp LA(UP_ARROW)    &kp LG(LEFT)  &kp UP_ARROW          &kp LG(RIGHT)  &kp PAGE_UP        &kp BSPC
+&kp LEFT_SHIFT       &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp ASTERISK     &kp LA(DOWN_ARROW)  &kp LEFT      &kp DOWN              &kp RIGHT      &kp PAGE_DOWN      &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp SLASH        &kp LS(LA(LEFT))    &kp LA(LEFT)  &kp LS(LG(NUMBER_4))  &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
+                                              &kp NUMBER_0  &kp LEFT_COMMAND  &td_dot_comma    &kp ENTER           &none         &to 0
             >;
         };
 
