@@ -101,8 +101,7 @@
 
         ht_bt_clear: ht_bt_clear {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&bt>, <&none>;
-
+            bindings = <&bt>;
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
