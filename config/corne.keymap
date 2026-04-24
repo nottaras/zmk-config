@@ -10,20 +10,20 @@
 
 / {
     macros {
-        lang_layer_1: new_macro {
+        lang_layer_1: lang_layer_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &to 1>, <&macro_wait_time 100>;
+            bindings = <&kp CAPSLOCK>, <&macro_wait_time 100>, <&to 1>;
 
-            label = "NEW_MACRO";
+            label = "LANG_LAYER_1";
         };
 
-        lang_layer_0: land_layer_0 {
+        lang_layer_0: lang_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &to 0>, <&macro_wait_time 100>;
+            bindings = <&kp CAPSLOCK>, <&macro_wait_time 100>, <&to 0>;
 
-            label = "LAND_LAYER_0";
+            label = "LANG_LAYER_0";
         };
     };
 
