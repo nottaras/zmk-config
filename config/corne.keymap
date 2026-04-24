@@ -13,7 +13,7 @@
         lang_layer_1: lang_layer_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>, <&macro_wait_time 100>, <&to 1>;
+            bindings = <&kp CAPSLOCK>, <&macro_wait_time 150>, <&to 1>;
 
             label = "LANG_LAYER_1";
         };
@@ -21,7 +21,7 @@
         lang_layer_0: lang_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>, <&macro_wait_time 100>, <&to 0>;
+            bindings = <&kp CAPSLOCK>, <&macro_wait_time 150>, <&to 0>;
 
             label = "LANG_LAYER_0";
         };
