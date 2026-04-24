@@ -51,7 +51,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
 
@@ -66,7 +66,7 @@
             bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         td_comma_shifted: td_comma_shifted {
@@ -163,10 +163,10 @@
 
         bt_layer {
             bindings = <
-&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-                                   &none         &none         &bt BT_CLR      &none  &none  &none
+&none  &none         &none         &none         &none         &none                    &none  &none  &none  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none                    &none  &none  &none  &none  &none  &none
+                                   &none         &none         &ht_bt_clear BT_CLR 0    &none  &none  &none
             >;
         };
     };
