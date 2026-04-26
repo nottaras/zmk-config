@@ -120,6 +120,14 @@
 
             label = "TD_DOT_MINUS";
         };
+
+        td_comma_question: td_comma_question {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp LS(KP_DOT)>, <&kp QUESTION>;
+
+            label = "TD_COMMA_QUESTION";
+        };
     };
 
     keymap {
@@ -136,10 +144,10 @@
 
         ru_layer {
             bindings = <
-&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &td_t_backslash    &kp Y      &kp U          &td_i_o         &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G              &kp H      &kp J          &kp K           &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B              &kp N      &td_m_bracket  &kp COMMA       &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
-                                   &switch_to_en  &kp LEFT_COMMAND  &kp SPACE          &kp ENTER  &td_dot_minus  &kp LS(KP_DOT)
+&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &td_t_backslash    &kp Y      &kp U          &td_i_o             &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G              &kp H      &kp J          &kp K               &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B              &kp N      &td_m_bracket  &kp COMMA           &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
+                                   &switch_to_en  &kp LEFT_COMMAND  &kp SPACE          &kp ENTER  &td_dot_minus  &td_comma_question
             >;
         };
 
