@@ -102,6 +102,7 @@
         ht_bt_clear: ht_bt_clear {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&bt>, <&none>;
+
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
@@ -144,10 +145,10 @@
 
         sym_layer {
             bindings = <
-&ht_tab_layer 4 GRAVE  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
-&kp SLASH              &kp BACKSLASH    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
-&none                  &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &td_minus_alt           &none                  &none              &none            &none             &none      &kp ESCAPE
-                                                       &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &none
+&ht_tab_layer 4 TAB  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE                &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
+&kp LEFT_SHIFT       &td_minus_alt    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &kp SLASH               &kp BACKSLASH          &kp GRAVE          &none            &none             &none      &kp ESCAPE
+                                                     &kp COMMA       &kp DOT           &kp BACKSPACE           &kp RET                &to 0              &none
             >;
         };
 
@@ -162,10 +163,10 @@
 
         bt_layer {
             bindings = <
-&none  &none         &none         &none         &none         &none                    &none  &none  &none  &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none                    &none  &none  &none  &none  &none  &none
-                                   &none         &none         &ht_bt_clear BT_CLR      &none  &none  &none
+&none  &none         &none         &none         &none         &none                  &none  &none  &none  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none                  &none  &none  &none  &none  &none  &none
+                                   &none         &none         &ht_bt_clear BT_CLR    &none  &none  &none
             >;
         };
     };
