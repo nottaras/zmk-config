@@ -13,16 +13,14 @@
         switch_to_ru: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>, <&macro_wait_time 200>, <&to 1>;
-
+            bindings = <&kp LC(SPACE)>, <&macro_wait_time 50>, <&to 1>;
             label = "SWITCH_TO_RU";
         };
 
         switch_to_en: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>, <&macro_wait_time 200>, <&to 0>;
-
+            bindings = <&kp LC(SPACE)>, <&macro_wait_time 50>, <&to 0>;
             label = "SWITCH_TO_EN";
         };
     };
@@ -67,6 +65,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
 
         td_comma_shifted: td_comma_shifted {
@@ -93,17 +92,12 @@
             bindings = <&kp SINGLE_QUOTE>, <&kp LS(SINGLE_QUOTE)>;
         };
 
-        td_keypad_dot_shifted: td_keypad_dot_shifted {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp KP_DOT>, <&kp LS(KP_DOT)>;
-        };
-
         ht_bt_clear: ht_bt_clear {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&bt>, <&none>;
+            bindings = <&bt>, <&kp>;
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <500>;
+            flavor = "hold-preferred";
         };
 
         td_minus_alt: td_minus_alt {
