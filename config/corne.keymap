@@ -13,14 +13,14 @@
         switch_to_ru: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE)>, <&macro_wait_time 50>, <&to 1>;
+            bindings = <&kp F18>, <&to 1>;
             label = "SWITCH_TO_RU";
         };
 
         switch_to_en: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE)>, <&macro_wait_time 50>, <&to 0>;
+            bindings = <&kp F17>, <&to 0>;
             label = "SWITCH_TO_EN";
         };
     };
