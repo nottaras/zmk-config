@@ -13,14 +13,14 @@
         switch_to_ru: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F18>, <&to 1>;
+            bindings = <&kp F18 &to 1>;
             label = "SWITCH_TO_RU";
         };
 
         switch_to_en: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F17>, <&to 0>;
+            bindings = <&kp F17 &to 0>;
             label = "SWITCH_TO_EN";
         };
     };
@@ -86,6 +86,7 @@
         ht_bt_clear: ht_bt_clear {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&bt>, <&none>;
+
             #binding-cells = <2>;
             tapping-term-ms = <500>;
             flavor = "hold-preferred";
@@ -119,10 +120,10 @@
 
         en_layer {
             bindings = <
-&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &kp T        &kp Y      &kp U             &kp I              &kp O            &kp P                  &kp BSPC
-&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J             &kp K              &kp L            &td_semicolon_shifted  &kp LEFT_ALT
-&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &kp M             &td_comma_shifted  &td_dot_shifted  &td_quote_shifted      &kp ESCAPE
-                                   &switch_to_ru  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &mo 2             &mo 3
+&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &kp T        &kp Y      &kp U  &kp I              &kp O            &kp P                  &kp BSPC
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G        &kp H      &kp J  &kp K              &kp L            &td_semicolon_shifted  &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B        &kp N      &kp M  &td_comma_shifted  &td_dot_shifted  &td_quote_shifted      &kp ESCAPE
+                                   &switch_to_ru  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &mo 2  &mo 3
             >;
         };
 
@@ -155,10 +156,10 @@
 
         bt_layer {
             bindings = <
-&none  &none         &none         &none         &none         &none                  &none  &none  &none  &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none                  &none  &none  &none  &none  &none  &none
-                                   &none         &none         &ht_bt_clear BT_CLR    &none  &none  &none
+&none  &none         &none         &none         &none         &ht_bt_clear BT_CLR 0    &none  &none  &none  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none                    &none  &none  &none  &none  &none  &none
+                                   &none         &none         &none                    &none  &none  &none
             >;
         };
     };
