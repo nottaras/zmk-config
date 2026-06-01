@@ -59,30 +59,6 @@
             bindings = <&kp DOT>, <&kp COMMA>;
         };
 
-        td_comma_shifted: td_comma_shifted {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp LS(COMMA)>;
-        };
-
-        td_dot_shifted: td_dot_shifted {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp LS(DOT)>;
-        };
-
-        td_semicolon_shifted: td_semicolon_shifted {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp LS(SEMICOLON)>;
-        };
-
-        td_quote_shifted: td_quote_shifted {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp LS(SINGLE_QUOTE)>;
-        };
-
         ht_bt_clear: ht_bt_clear {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&bt>, <&none>;
@@ -120,9 +96,9 @@
 
         BASE {
             bindings = <
-&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E  &kp R             &kp T      &kp Y      &kp U  &kp I              &kp O            &kp P                  &kp BSPC
-&kp LEFT_SHIFT       &kp A  &kp S  &kp D  &kp F             &kp G      &kp H      &kp J  &kp K              &kp L            &td_semicolon_shifted  &kp LEFT_ALT
-&kp LEFT_CONTROL     &kp Z  &kp X  &kp C  &kp V             &kp B      &kp N      &kp M  &td_comma_shifted  &td_dot_shifted  &td_quote_shifted      &kp ESCAPE
+&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E  &kp R             &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D  &kp F             &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp Z  &kp X  &kp C  &kp V             &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH      &kp ESCAPE
                                    &RU    &kp LEFT_COMMAND  &kp SPACE  &kp ENTER  &mo 2  &mo 3
             >;
         };
