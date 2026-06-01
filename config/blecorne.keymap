@@ -10,14 +10,14 @@
 
 / {
     macros {
-        switch_to_ru: switch_to_ru {
+        RU: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F18 &to 1>;
             label = "SWITCH_TO_RU";
         };
 
-        switch_to_en: switch_to_en {
+        BASE: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F17 &to 0>;
@@ -120,19 +120,19 @@
 
         BASE {
             bindings = <
-&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &kp T      &kp Y      &kp U  &kp I              &kp O            &kp P                  &kp BSPC
-&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G      &kp H      &kp J  &kp K              &kp L            &td_semicolon_shifted  &kp LEFT_ALT
-&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B      &kp N      &kp M  &td_comma_shifted  &td_dot_shifted  &td_quote_shifted      &kp ESCAPE
-                                   &switch_to_ru  &kp LEFT_COMMAND  &kp SPACE  &kp ENTER  &mo 2  &mo 3
+&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E  &kp R             &kp T      &kp Y      &kp U  &kp I              &kp O            &kp P                  &kp BSPC
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D  &kp F             &kp G      &kp H      &kp J  &kp K              &kp L            &td_semicolon_shifted  &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp Z  &kp X  &kp C  &kp V             &kp B      &kp N      &kp M  &td_comma_shifted  &td_dot_shifted  &td_quote_shifted      &kp ESCAPE
+                                   &RU    &kp LEFT_COMMAND  &kp SPACE  &kp ENTER  &mo 2  &mo 3
             >;
         };
 
         RU {
             bindings = <
-&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E          &kp R             &td_t_backslash  &kp Y      &kp U          &td_i_o             &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LEFT_SHIFT       &kp A  &kp S  &kp D          &kp F             &kp G            &kp H      &kp J          &kp K               &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_CONTROL     &kp Z  &kp X  &kp C          &kp V             &kp B            &kp N      &td_m_bracket  &kp COMMA           &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
-                                   &switch_to_en  &kp LEFT_COMMAND  &kp SPACE        &kp ENTER  &td_dot_minus  &td_comma_question
+&ht_tab_layer 4 TAB  &kp Q  &kp W  &kp E  &kp R             &td_t_backslash  &kp Y      &kp U          &td_i_o             &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LEFT_SHIFT       &kp A  &kp S  &kp D  &kp F             &kp G            &kp H      &kp J          &kp K               &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp Z  &kp X  &kp C  &kp V             &kp B            &kp N      &td_m_bracket  &kp COMMA           &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
+                                   &BASE  &kp LEFT_COMMAND  &kp SPACE        &kp ENTER  &td_dot_minus  &td_comma_question
             >;
         };
 
