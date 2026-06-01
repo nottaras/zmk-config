@@ -117,7 +117,7 @@
 &ht_tab_layer 4 TAB  &kp EXCLAMATION  &kp EQUAL      &kp QUESTION    &kp AMPERSAND     &kp PIPE              &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT       &kp CARET  &kp BSPC
 &kp LEFT_SHIFT       &td_minus_alt    &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none      &kp LEFT_ALT
 &kp LEFT_CONTROL     &kp TILDE        &kp STAR       &kp COLON       &kp UNDERSCORE    &kp SLASH             &kp BACKSLASH          &kp GRAVE          &none            &none             &none      &kp ESCAPE
-                                                     &kp COMMA       &kp DOT           &kp BACKSPACE         &kp RET                &to 0              &none
+                                                     &none           &none             &none                 &kp RET                &to 0              &none
             >;
         };
 
