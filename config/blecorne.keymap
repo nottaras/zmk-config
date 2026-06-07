@@ -123,10 +123,10 @@
 
         NAV {
             bindings = <
-&ht_tab_layer 4 TAB  &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp LA(UP_ARROW)      &kp PG_UP         &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &none              &kp BSPC
-&kp LEFT_SHIFT       &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp LA(DOWN_ARROW)    &kp PAGE_DOWN     &kp LEFT      &kp DOWN      &kp RIGHT      &none              &kp LEFT_ALT
-&kp LEFT_CONTROL     &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp LS(LG(NUMBER_4))  &kp LS(LA(LEFT))  &kp LA(LEFT)  &none         &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
-                                          &kp NUMBER_0  &kp LEFT_COMMAND  &none                 &kp ENTER         &none         &none
+&ht_tab_layer 4 TAB  &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp LA(UP_ARROW)      &kp LS(LG(RIGHT_BRACKET))  &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &kp PG_UP          &kp BSPC
+&kp LEFT_SHIFT       &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp LA(DOWN_ARROW)    &kp LS(LG(LEFT_BRACKET))   &kp LEFT      &kp DOWN      &kp RIGHT      &kp PAGE_DOWN      &kp LEFT_ALT
+&kp LEFT_CONTROL     &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp LS(LG(NUMBER_4))  &kp LS(LA(LEFT))           &kp LA(LEFT)  &none         &kp LA(RIGHT)  &kp LS(LA(RIGHT))  &kp ESCAPE
+                                          &kp NUMBER_0  &kp LEFT_COMMAND  &none                 &kp ENTER                  &none         &none
             >;
         };
 
