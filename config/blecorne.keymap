@@ -114,10 +114,10 @@
 
         SYM {
             bindings = <
-&ht_tab_layer 4 TAB  &kp SLASH        &kp ASTERISK   &kp UNDERSCORE    &kp SEMICOLON   &kp COLON             &kp DOUBLE_QUOTES      &kp PIPE         &kp HASH           &kp AT            &kp BACKSLASH  &kp BSPC
-&kp LEFT_SHIFT       &kp EXCLAMATION  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp QUESTION   &kp LEFT_ALT
-&kp LEFT_CONTROL     &kp TILDE        &kp PLUS       &kp MINUS         &kp EQUAL       &kp AMPERSAND         &kp GRAVE              &kp DOLLAR       &kp CARET          &kp SINGLE_QUOTE  &kp PERCENT    &kp ESCAPE
-                                                     &none             &none           &none                 &none                  &none            &none
+&ht_tab_layer 4 TAB  &kp SLASH        &kp ASTERISK   &kp UNDERSCORE    &kp SEMICOLON   &kp COLON             &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp GRAVE          &kp HASH          &kp BACKSLASH  &kp BSPC
+&kp LEFT_SHIFT       &kp EXCLAMATION  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp QUESTION   &kp LEFT_ALT
+&kp LEFT_CONTROL     &kp PLUS         &kp MINUS      &kp EQUAL         &kp PIPE        &kp AMPERSAND         &kp DOLLAR             &kp CARET         &kp AT             &kp TILDE         &kp PERCENT    &kp ESCAPE
+                                                     &none             &none           &none                 &none                  &none             &none
             >;
         };
 
