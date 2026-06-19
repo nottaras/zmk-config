@@ -109,7 +109,7 @@
         compatible = "zmk,combos";
 
         minus {
-            bindings = <&kp LG(MINUS)>;
+            bindings = <&kp MINUS>;
             key-positions = <40 41>;
             layers = <1>;
             timeout-ms = <50>;
