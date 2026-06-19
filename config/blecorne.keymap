@@ -23,6 +23,13 @@
             bindings = <&kp F17 &to 0>;
             label = "SWITCH_TO_EN";
         };
+
+        dash: dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp>;
+            label = "DASH";
+        };
     };
 
     behaviors {
@@ -88,6 +95,18 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        minus {
+            bindings = <&kp LG(MINUS)>;
+            key-positions = <40 41>;
+            layers = <1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -102,10 +121,10 @@
 
         RU {
             bindings = <
-&ht_mo_kp 4 TAB   &kp Q  &kp W  &kp E   &kp R             &td_t_backslash  &kp Y      &kp U          &td_i_o     &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D   &kp F             &kp G            &kp H      &kp J          &kp K       &kp L             &kp SEMICOLON     &kp LEFT_ALT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C   &kp V             &kp B            &kp N      &td_m_bracket  &kp COMMA   &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
-                                &TO_EN  &kp LEFT_COMMAND  &kp SPACE        &kp ENTER  &kp KP_COMMA   &kp KP_DOT
+&ht_mo_kp 4 TAB   &kp Q  &kp W  &kp E   &kp R             &td_t_backslash  &kp Y              &kp U          &td_i_o     &kp LEFT_BRACKET  &kp P             &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D   &kp F             &kp G            &kp H              &kp J          &kp K       &kp L             &kp SEMICOLON     &kp LEFT_ALT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C   &kp V             &kp B            &kp N              &td_m_bracket  &kp COMMA   &kp DOT           &kp SINGLE_QUOTE  &kp ESCAPE
+                                &TO_EN  &kp LEFT_COMMAND  &kp SPACE        &ht_mo_kp 2 ENTER  &kp KP_COMMA   &kp KP_DOT
             >;
         };
 
