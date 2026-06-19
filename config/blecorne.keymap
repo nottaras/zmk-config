@@ -42,6 +42,9 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp BACKSLASH>;
+
+            tapping-term-ms = <300>;
+            label = "TD_T_BACKSLASH";
         };
 
         ht_mo_kp: ht_mo_kp {
@@ -58,6 +61,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COMMA>;
+
+            tapping-term-ms = <300>;
         };
 
         ht_bt_clear: ht_bt_clear {
@@ -73,6 +78,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp KP_MINUS>, <&kp LA(MINUS)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_dot_minus: td_dot_minus {
@@ -89,6 +96,7 @@
             bindings = <&kp LS(KP_DOT)>, <&kp QUESTION>, <&kp EXCLAMATION>;
 
             label = "TD_COMMA_QUESTION_EXCLAMATION";
+            tapping-term-ms = <300>;
         };
     };
 
