@@ -82,7 +82,7 @@
         td_comma_qustion: td_comma_qustion {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp LS(KP_NUMBER_6)>, <&kp QUESTION>;
+            bindings = <&kp LS(NUMBER_6)>, <&kp QUESTION>;
 
             tapping-term-ms = <300>;
             label = "TD_COMMA_QUSTION";
@@ -91,7 +91,7 @@
         td_dot_exclamation: td_dot_exclamation {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_7>, <&kp EXCLAMATION>;
+            bindings = <&kp N7>, <&kp EXCLAMATION>;
 
             tapping-term-ms = <300>;
             label = "TD_DOT_EXCLAMATION";
