@@ -23,13 +23,6 @@
             bindings = <&kp F17 &to 0>;
             label = "SWITCH_TO_EN";
         };
-
-        dash: dash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp>;
-            label = "DASH";
-        };
     };
 
     behaviors {
