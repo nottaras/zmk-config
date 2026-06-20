@@ -91,7 +91,7 @@
         td_dot_exclamation: td_dot_exclamation {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp N7>, <&kp EXCLAMATION>;
+            bindings = <&kp LS(N7)>, <&kp EXCLAMATION>;
 
             tapping-term-ms = <300>;
             label = "TD_DOT_EXCLAMATION";
